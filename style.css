@@ -108,16 +108,17 @@ body {
 }
 
 .header h1 {
-  margin: 5px 0 10px;  
+  margin: 5px 0 15px;    
 }
 .header p {
-  margin-bottom: 5px;  
+  margin-bottom: 5px;
+  font-size: 18px;  
 }
 
 .content {
   flex-grow: 1;
   background-color: rgb(254, 254, 254);
-  background-image: url('./images/background_blur_1.jpg');
+  background-image: url('./images/background_blur.jpg');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;

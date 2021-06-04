@@ -71,7 +71,9 @@ body {
 
 .externalLinks {
   display: flex;
-  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-left: 12%;
 }
 
 .externalLinks__item {
@@ -81,11 +83,12 @@ body {
   justify-content: center;
   margin-top: 10px;
   font-family: 'Lobster', cursive;
+  text-decoration: none;
 }
 
 .externalLinks__img {
-  width: 40px;
-  margin-right: 5px;
+  width: 25px;
+  margin-right: 10px;
 }
 
 .mainBar {

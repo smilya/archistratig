@@ -1,0 +1,49 @@
+.sidebar__box {
+  display: flex;
+  flex-direction: column;
+  padding: 0 5px;
+  border-right: 1px solid black;
+  border-top: 10px solid white;
+  min-width: 150px;
+  align-self:stretch;
+  height: 100vh;
+}
+
+.sidebar__user {
+  font-size: 14px;
+}
+
+.sidebar__user_avatar {
+  width: 30px;
+  border: 1px solid black;
+}
+
+.sidebar__search {
+  width: 140px;
+  margin-top: 10px;
+}
+
+.sidebar__search input {
+  width: 100%;
+}
+
+.sidebar__menu {
+  list-style-type: none;
+  padding-inline-start: 0;
+  margin-block: 10px;
+}
+
+.sidebar__menu_item a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  line-height: 18px;
+  display: inline-flex;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.sidebar__menu_item img {
+  width: 12px;
+  margin-right: 10px;
+}

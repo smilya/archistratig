@@ -24,7 +24,7 @@ body {
   padding-top: 5px;
   display: flex;  
   height: 100vh;
-  background-color: rgb(43, 42, 41);
+  background-color: rgb(41, 41, 39);
 }
 
 .menuBar {
@@ -50,7 +50,7 @@ body {
 .menu__item a {
   display: block;
   text-decoration: none;
-  color: rgb(43, 42, 41);
+  color: rgb(41, 41, 39);
   font-weight: bold;
   font-family: "CyrillicOldBold";
   font-size: 18px;

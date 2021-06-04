@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="components/sidebar/sidebar.css" />
+<div class="sidebar__box" ng-show="$ctrl.isOpen">
+  <div class="sidebar__user">
+    <img
+      class="sidebar__user_avatar"
+      src="./images/avatar.svg"
+      alt="avatar"
+    />
+    <span class="sidebar__user_name">Name Name</span>
+  </div>
+  <div class="sidebar__search">
+    <label
+      >Search:<br />
+      <input
+        type="text"
+        ng-model="searchTxt"
+      />
+    </label>
+  </div>
+  <ul class="sidebar__menu">
+    <li class="sidebar__menu_item" ng-repeat="item in $ctrl.menu | searchFilter:searchTxt | orderBy:'title'">
+      <a href="{{item.url}}">
+        <img ng-src="{{item.icoLink}}" alt="icon" />
+        <span>{{item.title}}</span>
+      </a>
+    </li>
+  </ul>
+  <p menu-length></p>
+  <p show-my-var></p>
+</div>

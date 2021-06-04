@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="./components/app/app.css" />
+
+<sidebar is-open="$ctrl.isSidebarOpen"></sidebar>
+<main>
+  <header
+    title="Home"
+    on-burger-click="$ctrl.onBurgerClick()"
+    show-burger="!$ctrl.isSidebarOpen"
+  ></header>
+  <div class="content">
+    <grid
+      data="$ctrl.gridData"
+      on-delete="$ctrl.onDelete(index)"
+      on-add="$ctrl.onAdd(index)"
+      on-edit="$ctrl.onEdit(index)"
+    ></grid>
+    <gridform
+      action-type="{{$ctrl.actionType}}"
+      is-open="$ctrl.isGridformOpen"
+      close-form="$ctrl.onGridformClose()"
+      init-data="$ctrl.userToEdit"
+      on-submit="$ctrl.onSubmit(newUserData)"
+    ></gridform>
+  </div>
+  <p show-max-id></p>
+  <p show-my-var></p>
+</main>

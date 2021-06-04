@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="components/header/header.css">
+<div class="header__box">
+  <div class="header__block header__startBlock">
+    <button ng-click="$ctrl.onClick()">
+      <img class="header__icon" src="../../images/header/burger.svg" alt="burger" ng-show="$ctrl.showBurger">
+      <img class="header__icon" src="../../images/header/close.svg" alt="close" ng-show="!$ctrl.showBurger">
+    </button>
+    <a href="#"><img class="header__icon" src="../../images/header/home.svg" alt="home"></a>
+    <div class="header__logo">
+      <span>UKG</span>
+    </div>
+  </div>
+  <div class="header__block header__mediumBlock">{{$ctrl.title}}</div>
+  <div class="header__block header__endBlock">
+    <a href="#"><img class="header__icon" src="../../images/header/message.svg" alt="message"></a>
+    <a href="#"><img class="header__icon" src="../../images/header/question.svg" alt="question"></a>
+    <a href="#"><img class="header__icon" src="../../images/header/bell.svg" alt="bell"></a>
+  </div>
+  {{onOff}}
+</div>

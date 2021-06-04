@@ -1,67 +1,28 @@
 <!DOCTYPE html>
-<html lang='ru'>
- <head>
-	<title>Archistratig RC</title>
-	<meta charset="utf-8">
-	<link rel='stylesheet' href='css/style.css'>
-	<link href="http://allfont.ru/allfont.css?fonts=cyrillicold" rel="stylesheet" type="text/css" />
-	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
- </head>
- 
- <body>
-	<div class='container'>
-		<div class='container__left clearfix'>
-			<div class='logoWrap'>
-				<img class='logoImg' src='images/Archistratig_logo.jpg' alt="Archistratig RC logo">
-			</div>
-			<div class='menuWrap'>
-				<!-- <a href="#" class="menuItem__link"> -->
-					<div class="menuItem-active">Новости</div>
-				<!-- </a>	 -->
-				<a href="calendar.html" class="menuItem__link">
-					<div class="menuItem">Календарь</div>
-				</a>
-				<a href="orthodox.html" class="menuItem__link">
-					<div class="menuItem">Православие</div>
-				</a>
-				<a href="workshop.html" class="menuItem__link">
-					<div class="menuItem">Мастерская</div>
-				</a>	
-				<a href="contacts.html" class="menuItem__link">
-					<div class="menuItem">Контакты</div>
-				</a>					
-				<a href="aboutUs.html" class="menuItem__link">
-					<div class="menuItem">О нас</div>
-				</a>
-			</div>
-			<div class='extLinksWrap'>
-				<a href='https://vk.com/club63590288'>
-					<div class='extLinksItem'>
-						<img class='extLink__img clearfix' src='images/vk_ico.png' alt='Мы в ВК'>
-						<div class='extLink__text clearfix'>Мы в ВКонтакте</div>
-					</div>
-				</a>
-			</div>
-		</div>
-		<div class='container__right clearfix'>
-			<div class='header'>
-			<h1>Мотобратство "Архистратиг" RC</h1>
-			<h4>Иже крестом ограждаеми, врагу противляемся!</h4>
-			</div>
-			<div class='pageContent'>
-				Тут лента новостей - обо всем, что добавляется в другие разделы - о новых планируемых событиях, занесенных в календарь, о новых статьях в разделах "Православие" и "Мастерская", об изменении Контактной информации, об изменениях в разделе "О нас" (напр. изменение состава членов Клуба)
-			</div>
-		</div>
-		<div class='footer'>
-			<div class='footer__content clearfix'>Разработка: Смирнов И.В., 2018 г.</div>
-		</div>
-		<div class='langChange'>
-			<a href="#">
-				<img class='langChange__img' src='images/flag_US.png' alt='US' title='Switch to English'>
-
-			</a>
-		</div>
-	</div>
- </body>
+<!--[if lt IE 7]>      <html lang="en" ng-app="theApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="theApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="theApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="theApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My AngularJS App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="lib/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="lib/html5-boilerplate/dist/css/main.css">
+  <script src="lib/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+  <app></app>
+  
+  <script src="lib/angular/angular.js"></script>
+  <script src="lib/angular-route/angular-route.js"></script>
+  <script src="app.js"></script> 
+  <script src="components/app/app.component.js" type="module"></script>
+  <script src="components/header/header.component.js" type="module"></script>
+  <script src="components/sidebar/sidebar.component.js" type="module"></script>
+  <script src="components/grid/grid.component.js" type="module"></script>
+  <script src="components/gridform/gridform.component.js" type="module"></script>
+</body>
 </html>

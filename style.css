@@ -28,14 +28,13 @@ body {
 }
 
 .menuBar {
-  flex-basis: 250px;
   min-width: 250px;
 }
 
 .menu {
   list-style-type: none;
   padding: 10px;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 .menu__item {
@@ -121,4 +120,5 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  padding: 10px 15px;
 }

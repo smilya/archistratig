@@ -29,11 +29,13 @@ body {
 
 .menuBar {
   flex-basis: 250px;
+  min-width: 250px;
 }
 
 .menu {
   list-style-type: none;
   padding: 10px;
+  margin: 20px 0;
 }
 
 .menu__item {
@@ -115,4 +117,8 @@ body {
 .content {
   flex-grow: 1;
   background-color: rgb(250, 250, 250);
+  background-image: url('./images/background_blur_1.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }

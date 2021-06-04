@@ -23,7 +23,7 @@ body {
   margin: 0 auto;
   padding-top: 5px;
   display: flex;  
-  height: 100vh;
+  min-height: 100vh;
   background-color: rgb(41, 41, 39);
 }
 

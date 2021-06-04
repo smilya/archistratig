@@ -67,6 +67,11 @@ body {
   cursor:auto
 }
 
+.externalLinks {
+  display: flex;
+  justify-content: center;
+}
+
 .externalLinks__item {
   color: rgb(250, 250, 250);
   display: flex;

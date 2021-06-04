@@ -115,10 +115,10 @@ body {
 
 .content {
   flex-grow: 1;
-  background-color: rgb(250, 250, 250);
+  background-color: rgb(254, 254, 254);
   background-image: url('./images/background_blur_1.jpg');
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   padding: 10px 15px;
 }

@@ -127,3 +127,16 @@ body {
   background-repeat: no-repeat;
   padding: 10px 15px;
 }
+
+.banner {
+  background-color: yellow;
+  padding-top: 15%;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner_img {
+  position: absolute;
+  width: 100%;
+  bottom: -13%;
+}

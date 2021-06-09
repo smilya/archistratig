@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "build_ghp": "ng build --base-href 'https://smilya.github.io/archistratig/'",
-    "deploy": ">ngh --dir dist/heroes",
+    "deploy": "ngh --dir dist/heroes",
     "test": "ng test"
   },
   "private": true,

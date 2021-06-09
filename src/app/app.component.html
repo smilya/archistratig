@@ -1,0 +1,44 @@
+<div class="container">
+  <nav class="menuBar">
+    <img class="logoImg" src="assets/images/logo.jpg" alt="Archistratig logo" />
+    <ul class="menu">
+      <li *ngFor="let item of menu" class="menu__item" [ngClass]="{ 'menu__item-active': path === item.path }">
+        <a href={{item.path}}>{{ item.name }}</a>
+      </li>
+    </ul>
+    <div class="externalLinks">
+      <a class="externalLinks__item" href="https://vk.com/club63590288">
+        <img
+          class="externalLinks__img"
+          src="assets/images/vk_ico.png"
+          alt="Мы в ВКонтакте"
+        />
+        Мы в ВКонтакте
+      </a>
+      <a
+        class="externalLinks__item"
+        href="https://www.facebook.com/groups/archistratege"
+      >
+        <img
+          class="externalLinks__img"
+          src="assets/images/fb_ico.png"
+          alt="Мы в FaceBook"
+        />
+        Мы в FaceBook
+      </a>
+    </div>
+  </nav>
+  <main class="mainBar">
+    <header class="header">
+      <h1>Мотобратство "Архистратиг" МСС</h1>
+      <p>Иже крестом ограждаеми врагу противляемся!</p>
+    </header>
+    <div class="banner">
+      <!-- <img class="banner_img" src="assets/images/banner_1.jpg" alt="banner" /> -->
+      <img class="banner_img" src={{bannerSrc}} alt="banner" />
+    </div>
+    <section class="content">
+      <router-outlet></router-outlet>
+    </section>
+  </main>
+</div>

@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face { 
+  font-family: "CyrillicOldBold";
+  src: url("./fonts/CyrillicOldBold.eot");
+  src: url("./fonts/CyrillicOldBold.eot?#iefix")format("embedded-opentype"),
+  url("./fonts/CyrillicOldBold.woff") format("woff"),
+  url("./fonts/CyrillicOldBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+
+body {
+  background-color: lightgray;
+}
+
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding-top: 5px;
+  display: flex;  
+  min-height: 100vh;
+  background-color: rgb(41, 41, 39);
+}
+
+.menuBar {
+  min-width: 250px;
+  flex-basis: 250px;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.menu__item {
+  background-color: rgb(250, 250, 250);
+  text-align: center;
+  padding: 3px 0;
+  border: 3px solid rgb(115, 38, 40);
+}
+
+.menu__item + .menu__item {
+  margin-top: 3px;
+}
+
+.menu__item a {
+  display: block;
+  text-decoration: none;
+  color: rgb(41, 41, 39);
+  font-weight: bold;
+  font-family: "CyrillicOldBold";
+  font-size: 18px;
+  padding: 3px 0;
+}
+
+.menu__item-active {
+  background-color: rgb(115, 38, 40);
+  border-color:rgb(250, 250, 250)
+}
+
+.menu__item-active a {
+  color:rgb(250, 250, 250);
+  cursor:auto
+}
+
+.externalLinks {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-left: 12%;
+}
+
+.externalLinks__item {
+  color: rgb(250, 250, 250);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  font-family: 'Lobster', cursive;
+  text-decoration: none;
+}
+
+.externalLinks__img {
+  width: 25px;
+  margin-right: 10px;
+}
+
+.mainBar {
+  flex-grow: 1;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logoImg {
+  width: 100%;
+}
+
+.header {
+  color: rgb(250, 250, 250);;
+  text-align: center;
+  padding-bottom: 5px;
+  font-family: "CyrillicOldBold";
+}
+
+.header h1 {
+  margin: 5px 0 15px;    
+}
+.header p {
+  margin-bottom: 5px;
+  font-size: 18px;  
+}
+
+.content {
+  flex-grow: 1;
+  background-color: rgb(254, 254, 254);
+  background-image: url('./images/background_blur.jpg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 10px 15px;
+}
+
+.banner {
+  padding-top: 15%;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner_img {
+  position: absolute;
+  width: 100%;
+  bottom: -13%;
+}

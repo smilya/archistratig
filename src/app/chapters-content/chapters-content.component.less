@@ -1,4 +1,4 @@
-@import '../../constants.less';
+@import "../../constants.less";
 
 .chaptersContainer {
   display: flex;
@@ -20,7 +20,7 @@
   margin-right: 10px;
 
   @media (max-width: @mobileWidth) {
-    width: 90%;;
+    width: 90%;
     margin-right: 0;
   }
 }
@@ -32,10 +32,15 @@
   padding: 3px 30px 3px 5px;
   border: 3px solid @bloodColor;
   cursor: pointer;
-  
+
+  @media (max-width: @mobileWidth) {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
   &:hover {
     transform: scale(103%);
-  } 
+  }
 
   &:active {
     transform: scale(100%);
@@ -47,22 +52,30 @@
     border: 2px solid @dayColor;
     transform: scale(103%);
     cursor: default;
-    
+
     p {
       color: @dayColor;
     }
-
   }
 
   img {
     width: 100px;
     margin-right: 10px;
-  };
+
+    @media (max-width: @mobileWidth) {
+      width: 70px;
+      margin-right: 5px;
+    }
+  }
 
   p {
     font-size: 32px;
     font-weight: bold;
     color: @nightColor;
+
+    @media (max-width: @mobileWidth) {
+      font-size: 24px;
+    }
   }
 }
 
@@ -78,10 +91,13 @@
   margin-bottom: 15px;
 
   @media (max-width: @mobileWidth) {
-    width: 98%;;
+    width: 98%;
+    min-width: 0;
+    font-size: 18px;
+    line-height: 28px;
   }
 
   .detailLabel {
-    font-weight: bold;    
+    font-weight: bold;
   }
 }

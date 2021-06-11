@@ -1,0 +1,87 @@
+@import '../../constants.less';
+
+.chaptersContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+
+  @media (max-width: 1000px) {
+    flex-direction: column-reverse;
+  }
+
+  @media (max-width: @mobileWidth) {
+    align-items: center;
+  }
+}
+
+.chaptersList {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 10px;
+
+  @media (max-width: @mobileWidth) {
+    width: 90%;;
+    margin-right: 0;
+  }
+}
+
+.chapterTile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 3px 30px 3px 5px;
+  border: 3px solid @bloodColor;
+  cursor: pointer;
+  
+  &:hover {
+    transform: scale(103%);
+  } 
+
+  &:active {
+    transform: scale(100%);
+  }
+
+  &.selected {
+    background-color: @bloodColor;
+    outline: 2px solid @bloodColor;
+    border: 2px solid @dayColor;
+    transform: scale(103%);
+    cursor: default;
+    
+    p {
+      color: @dayColor;
+    }
+
+  }
+
+  img {
+    width: 100px;
+    margin-right: 10px;
+  };
+
+  p {
+    font-size: 32px;
+    font-weight: bold;
+    color: @nightColor;
+  }
+}
+
+.chapterDetails {
+  outline: 3px solid @bloodColor;
+  border: 3px solid @dayColor;
+  background-color: @bloodColor;
+  color: @dayColor;
+  padding: 20px;
+  min-width: 380px;
+  font-size: 24px;
+  line-height: 34px;
+  margin-bottom: 15px;
+
+  @media (max-width: @mobileWidth) {
+    width: 98%;;
+  }
+
+  .detailLabel {
+    font-weight: bold;    
+  }
+}

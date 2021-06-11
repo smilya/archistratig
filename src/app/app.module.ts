@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { MainContentComponent } from './main-content/main-content.component';
 import { EventsContentComponent } from './events-content/events-content.component';
 import { ColorsContentComponent } from './colors-content/colors-content.component';
+import { ChaptersContentComponent } from './chapters-content/chapters-content.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainContentComponent,
     EventsContentComponent,
-    ColorsContentComponent
+    ColorsContentComponent,
+    ChaptersContentComponent
   ],
   imports: [
     BrowserModule,

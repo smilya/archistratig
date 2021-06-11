@@ -1,0 +1,21 @@
+<h2 class="content__header">Отделения</h2>
+<div class="chaptersContainer">
+  <ul class="chaptersList">
+    <li
+      *ngFor="let chapter of chapters"
+      class="chapterTile"
+      (click)="onTileClick(chapter)"
+      [class.selected]="chapter === selectedChapter"
+    >
+      <img src="../../assets/images/townRoadSign.png" alt="roadsign" />
+      <p>{{ chapter.town }}</p>
+    </li>
+  </ul>
+  <div class="chapterDetails">
+    <p><span class="detailLabel">Город: </span>{{ selectedChapter?.town }}</p>
+    <p>
+      <span class="detailLabel">Контакт: </span>{{ selectedChapter?.contactName }}
+    </p>
+    <p><span class="detailLabel">Телефон: </span>{{ selectedChapter?.phone }}</p>
+  </div>
+</div>

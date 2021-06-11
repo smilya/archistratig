@@ -1,4 +1,4 @@
-@mobileWidth: 560px;
+@import '../constants.less';
 
 .container {
   max-width: 1250px;
@@ -6,7 +6,7 @@
   padding-top: 5px;
   display: flex;
   min-height: 100vh;
-  background-color: rgb(41, 41, 39);
+  background-color: @nightColor;
 
   @media (max-width: @mobileWidth) {
     flex-direction: column;
@@ -37,10 +37,10 @@
     }
 
     .menu__item {
-      background-color: rgb(250, 250, 250);
+      background-color: @dayColor;
       text-align: center;
       padding: 3px 0;
-      border: 3px solid rgb(115, 38, 40);
+      border: 3px solid @bloodColor;
 
       & + .menu__item {
         margin-top: 3px;
@@ -53,7 +53,7 @@
       a {
         display: block;
         text-decoration: none;
-        color: rgb(41, 41, 39);
+        color: @nightColor;
         font-weight: bold;
         font-family: "CyrillicOldBold";
         font-size: 18px;
@@ -65,11 +65,11 @@
       }
 
       &.menu__item-active {
-        background-color: rgb(115, 38, 40);
-        border-color: rgb(250, 250, 250);
+        background-color: @bloodColor;
+        border-color: @dayColor;
 
         a {
-          color: rgb(250, 250, 250);
+          color: @dayColor;
           cursor: auto;
         }
       }
@@ -89,7 +89,7 @@
     }
 
     .externalLinks__item {
-      color: rgb(250, 250, 250);
+      color: @dayColor;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -118,7 +118,7 @@
   }
 
   .header {
-    color: rgb(250, 250, 250);
+    color: @dayColor;
     text-align: center;
     padding-bottom: 5px;
     font-family: "CyrillicOldBold";
@@ -154,5 +154,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     padding: 10px 15px;
+    font-size: 20px;
   }
 }
+

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, ParamMap } from "@angular/router";
+import { MENU } from '../assets/menu';
 
 @Component({
   selector: 'app-root',
@@ -9,11 +10,7 @@ import { ActivatedRoute, ParamMap } from "@angular/router";
 export class AppComponent {
   path: string;
   bannerSrc: string;
-  menu = [
-    { name: "Главная", path: 'index', bannerSrc: 'assets/images/banner_1.jpg' },
-    { name: "События", path: 'events', bannerSrc: 'assets/images/banner_2.jpg' },
-    { name: "Цвета клуба", path: 'colors', bannerSrc: 'assets/images/banner_3.jpg' },
-  ]
+  menu = MENU;
 
   constructor() {
     const absPath = window.location.href;

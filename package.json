@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --port 3000",
     "build": "ng build  --base-href 'https://smilya.github.io/archistratig/'",
     "deploy": "ngh --dir dist/heroes",
     "watch": "ng build --watch --configuration development",
